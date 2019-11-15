@@ -21,7 +21,7 @@ header{
 	align-items: center;
 	z-index: 10;
 	font-family: 'PT Sans', sans-serif;
-
+	box-shadow: 0 .5vh .5vw rgba(0,0,0,0.05);
 }
 
 header img{
@@ -53,8 +53,8 @@ h2 {
 }
 
 #sidebar{
-	background: #111;
-	width: 20vw;
+	background: #eee;
+	width: 14vw;
 	height: 100%;
 }
 
