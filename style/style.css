@@ -1,8 +1,7 @@
 body {
-	font-family: Roboto, sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	overflow: hidden;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	width: 100vw;
@@ -13,14 +12,16 @@ body {
 }
 
 header{
-	height: 6vh;
+	height: 8vh;
 	padding: 2vh 2vw;
 	width: 100vw;
 	display: flex;
 	flex-direction: row;
 	justify-items: flex-start;
 	align-items: center;
-	box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
+	z-index: 10;
+	font-family: 'PT Sans', sans-serif;
+
 }
 
 header img{
@@ -30,25 +31,73 @@ header img{
 
 h1 {
 	font-size: 1.2em;
-	letter-spacing: .05em;
+	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 200;
 	margin: 0;
 	padding: 0;
+	text-align: right;
+	flex-grow: 1;
+	padding: 0 1vw 0 0;
+	color: #ff6319;
 }
 
 h2 {
 	font-size: 1em;
 	letter-spacing: .05em;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 400;
 	margin: 0;
 	padding: 1vh 1vw;
+	color: #333;
 }
 
 #datavizDashboard{
-	height: 100%;
-	width: 100%;
+	margin: 0;
+	background: #eee;
+	display: flex;
 	flex-grow: 1;
+	min-width: 100%;
+	background: url('https://images.pexels.com/photos/2165688/pexels-photo-2165688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+	background-size: cover;
+    align-content: space-around;
+    justify-content: center;
+}
+
+#sidebar{
+	background: #111;
+	width: 20vw;
+	height: 100%;
+}
+
+#content{
+	width: 80vw;
+	height: 100%;
+	display: flex;	
+    align-content: space-around;
+    justify-content: center;
+}
+
+#datavizDashboard #content .col-6{
+	display: flex;	
+	align-self: flex-end;
+	flex-direction: column;
+	flex-grow: 1;
+	width: fit-content;
+	height: fit-content;
+}
+
+#datavizDashboard .card{
+	border: 0 none;
 	padding: 2vh 2vw;
+	background: rgba(255,255,255,0.8);
+	backdrop-filter: blur(10px);
+	display: flex;
+	height: calc(100% - 4vh);
+	width: calc(100% - 8vw);
+}
+
+#datavizDashboard .card canvas{
+	max-height: 100%;
+	max-width: 100%;
 }
