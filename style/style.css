@@ -1,11 +1,54 @@
 body {
 	font-family: Roboto, sans-serif;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	color: #444;
+}
+
+header{
+	height: 6vh;
+	padding: 2vh 2vw;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-items: flex-start;
+	align-items: center;
+	box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
+}
+
+header img{
+	max-height: calc(10vh - 6vh);
+	padding: 0 1vw 0 0;
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 1.2em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
-	font-size: 1.25rem;
+	font-size: 1em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	font-weight: 100;
+	margin: 0;
+	padding: 1vh 1vw;
+}
+
+#datavizDashboard{
+	height: 100%;
+	width: 100%;
+	flex-grow: 1;
+	padding: 2vh 2vw;
 }
